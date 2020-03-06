@@ -49,6 +49,19 @@ img {
   margin: 0 auto;
 }
 
+@media @mobile{
+  .container{
+    padding: 0 10%;
+  }
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
 .btn{
   .buttonStyle(15%, 80%);
+  @media @mobile{
+    .buttonStyle(15%, 100%);
+  }
 }

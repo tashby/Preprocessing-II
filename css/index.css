@@ -169,6 +169,15 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    padding: 0 10%;
+  }
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
 .btn {
   background-color: #17A2B8;
   color: #FFFFFF;
@@ -192,6 +201,32 @@ img {
   color: #212529;
   font-size: 2rem;
   transition: ease-in 2s;
+}
+@media (max-width: 500px) {
+  .btn {
+    background-color: #17A2B8;
+    color: #FFFFFF;
+    font-size: 1.6rem;
+    padding-bottom: 12px 20px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 15%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .btn:hover {
+    background-color: #FFEBCD;
+    height: 20%;
+    color: #212529;
+    font-size: 2rem;
+    transition: ease-in 2s;
+  }
 }
 nav {
   border-bottom: 2px dashed #C0C0C0;
@@ -218,7 +253,7 @@ nav ul a {
 @media (max-width: 500px) {
   nav ul {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -261,6 +296,18 @@ nav ul a {
 .home .content-section .img-content img {
   border-radius: 10px;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: none;
+  }
+  .home .content-section .text-content {
+    width: 100%;
+  }
+}
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
@@ -273,12 +320,29 @@ nav ul a {
   padding-right: 1%;
   padding-left: 0;
 }
+@media (max-width: 500px) {
+  .home .inverse-content {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: none;
+  }
+  .home .inverse-content .text-content {
+    width: 100%;
+  }
+}
 .home .content-destination {
   width: 75%;
   margin: 0 auto 30px;
 }
 .home .content-destination img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 100%;
+  }
 }
 .home .content-pick {
   padding-top: 30px;
@@ -289,6 +353,18 @@ nav ul a {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: none;
+  }
+  .home .content-pick .destination {
+    width: 100%;
+  }
 }
 header {
   border-bottom: 2px dashed #C0C0C0;

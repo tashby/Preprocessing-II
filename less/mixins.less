@@ -1,1 +1,40 @@
 // Mixins in here
+
+.fontPlusPadding(@fs, @pb){
+    font-size: @fs;
+    padding-bottom: @pb;
+}
+.mixflex(@d, @f, @j, @a, @t){
+    display: @d;
+    flex-direction: @f;
+    justify-content: @j;
+    align-items: @a;
+    text-align: @t;
+}
+
+.navstyles(){
+    .fontPlusPadding(2rem, 1px);
+    margin: 10px;
+    text-decoration: none;
+    color: @shark;
+}
+
+.buttonStyle(@hvar, @wvar){
+    background-color: @eastern-blue;
+    color: @white;
+    .fontPlusPadding(@pFontSize, 12px 20px);
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    height: @hvar;
+    width: @wvar;
+    .mixflex(flex, row, center, center, center);
+     &:hover{
+        background-color: @sandy-beach;
+        color: @shark;
+        font-size: 2rem;
+        transition: ease-in 2s;
+    }
+}
+
